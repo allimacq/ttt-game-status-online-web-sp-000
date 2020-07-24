@@ -78,7 +78,7 @@ def winner(board)
   #if board[win[0]] == "X" && won?(board) != false
    # return "X"
   #elsif board[win[0]] == "O" && won?(board) != false
-    return "O"
+    #return "O"
   #now returning nil if there is no winner
   if won?(board) == false
     return nil

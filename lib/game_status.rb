@@ -76,10 +76,11 @@ def winner(board)
   win = won?(board)
   #all indexes should have the same token for a win, so we're only checking the first
   if board[win[0]] == "X"
-    puts "X"
+    return "X"
   elsif board[win[0]] == "O"
-    puts "O"
+    return "O"
+  #now returning nil if there is no winner
   elsif won?(board) == false
-    return false
+    return nil
   end
 end

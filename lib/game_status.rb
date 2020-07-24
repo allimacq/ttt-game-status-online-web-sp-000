@@ -74,13 +74,13 @@ end
 def winner(board)
   #setting the index of the win into a variable, win
   win = won?(board)
-  #all indexes should have the same token for a win, so we're only checking the first
-  #if board[win[0]] == "X" && won?(board) != false
-   # return "X"
-  #elsif board[win[0]] == "O" && won?(board) != false
-    #return "O"
   #now returning nil if there is no winner
   if won?(board) == false
     return nil
+  #all indexes should have the same token for a win, so we're only checking the first
+  elsif board[win[0]] == "X" && won?(board) != false
+    return "X"
+  elsif board[win[0]] == "O" && won?(board) != false
+    return "O"
   end
 end
